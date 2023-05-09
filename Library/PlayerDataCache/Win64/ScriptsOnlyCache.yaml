@@ -1,0 +1,138 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - FT_FadeObject
+    UdonSharp.Editor.dll:
+    - UdonSharp.UdonSharpProgramAsset
+    - UdonSharpEditor.UdonSharpAssemblyDefinition
+    Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputSettings
+    - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    VRC.SDKBase.Editor.dll:
+    - VRCSdkControlPanel
+    VRC.Udon.Editor.dll:
+    - VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UdonGraphProgramAsset
+    VRC.Udon.dll:
+    - VRC.Udon.ProgramSources.SerializedUdonProgramAsset
+    - VRC.Udon.UdonBehaviour
+    VRCCore-Editor.dll:
+    - BestHTTP.HTTPUpdateDelegator
+    - PipelineSaver
+    - VRC.Core.PipelineManager
+    - VRC.Core.Pool.PoolManager
+    - VRC.Core.UpdateDelegator
+    - VRCProjectSettings
+    VRCSDK3.dll:
+    - VRC.SDK3.Components.VRCSceneDescriptor
+    - VRC.SDK3.Components.VRCSpatialAudioSource
+    VRCSDKBase.dll:
+    - VRC.SDKBase.Validation.Performance.Stats.AvatarPerformanceStatsLevel
+    - VRC.SDKBase.Validation.Performance.Stats.AvatarPerformanceStatsLevelSet
+  sceneClasses:
+    Assets/Scene/0508_2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 13256}
+    - Class: 114
+      Script: {instanceID: 13408}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 14434}
+    - Class: 114
+      Script: {instanceID: 17770}
+    - Class: 114
+      Script: {instanceID: 17772}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: bad0f5a58d4b55ed1442379677ba2587
+    assemblyName: VRC.Udon.dll
+    namespaceName: VRC.Udon.ProgramSources
+    className: SerializedUdonProgramAsset
+  - hash:
+      serializedVersion: 2
+      Hash: cc1aac33f5125bbefd2909802811f14c
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCSceneDescriptor
+  - hash:
+      serializedVersion: 2
+      Hash: 51b7e090b99b560b762f54d192de261e
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCSpatialAudioSource
+  - hash:
+      serializedVersion: 2
+      Hash: 55caa267dabff880fc180f037fbb0fd0
+    assemblyName: VRC.Udon.dll
+    namespaceName: VRC.Udon
+    className: UdonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 5db75d920ffb77b623077e95eb9ecdb8
+    assemblyName: VRCCore-Editor.dll
+    namespaceName: VRC.Core
+    className: PipelineManager
+  - hash:
+      serializedVersion: 2
+      Hash: 16ef503b1ce5b439b96ce01a43c0c35b
+    assemblyName: VRCCore-Editor.dll
+    namespaceName: 
+    className: PipelineSaver
+  platform: 19
+  scenePathNames:
+  - Assets/Scene/0508_2.unity
+  playerPath: C:/Users/81909/AppData/Local/Temp/DefaultCompany/kinoko2023summer/scene-standalonewindows64-0508_2.vrcw

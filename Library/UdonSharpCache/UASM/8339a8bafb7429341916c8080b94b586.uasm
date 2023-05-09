@@ -1,0 +1,645 @@
+.data_start
+    .export FadeObject
+    .export teleportPoint
+    .export disableObjects
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    FadeObject: %UnityEngineGameObject, null
+    teleportPoint: %UnityEngineGameObject, null
+    disableObjects: %UnityEngineGameObjectArray, null
+    isTeleporting: %SystemBoolean, null
+    canMove: %SystemBoolean, null
+    startTime: %SystemSingle, null
+    fadein_end: %SystemSingle, null
+    teleportTime: %SystemSingle, null
+    dark_end: %SystemSingle, null
+    fadeout_end: %SystemSingle, null
+    interval_end: %SystemSingle, null
+    stayTimeToTeleport: %SystemSingle, null
+    enteredTime: %SystemSingle, null
+    fadeMaterial: %UnityEngineMaterial, null
+    teleportSE: %UnityEngineAudioClip, null
+    audioSource: %UnityEngineAudioSource, null
+    playSEOnTeleport: %SystemBoolean, null
+    udon: %VRCUdonUdonBehaviour, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemType_0: %SystemType, null
+    __const_SystemString_0: %SystemString, null
+    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null
+    onPlayerTriggerStayPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __const_SystemString_1: %SystemString, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __const_SystemSingle_2: %SystemSingle, null
+    __const_SystemString_3: %SystemString, null
+    __const_SystemString_4: %SystemString, null
+    __const_SystemString_5: %SystemString, null
+    __const_SystemString_6: %SystemString, null
+    __const_SystemString_7: %SystemString, null
+    __const_SystemType_1: %SystemType, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemType_2: %SystemType, null
+    __const_SystemString_8: %SystemString, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __const_SystemSingle_3: %SystemSingle, null
+    __const_SystemSingle_4: %SystemSingle, null
+    __intnl_UnityEngineComponent_0: %UnityEngineComponent, null
+    __intnl_SystemObject_0: %SystemObject, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineComponent_1: %UnityEngineComponent, null
+    __intnl_SystemObject_1: %SystemObject, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemObject_2: %SystemObject, null
+    __intnl_SystemObject_3: %SystemObject, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemObject_4: %SystemObject, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_SystemObject_5: %SystemObject, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __intnl_SystemObject_6: %SystemObject, null
+    __intnl_SystemSingle_6: %SystemSingle, null
+    __intnl_SystemObject_7: %SystemObject, null
+    __intnl_SystemObject_8: %SystemObject, null
+    __intnl_SystemObject_9: %SystemObject, null
+    __intnl_UnityEngineTransform_0: %UnityEngineTransform, null
+    __intnl_UnityEngineTransform_1: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineTransform_2: %UnityEngineTransform, null
+    __intnl_UnityEngineRenderer_0: %UnityEngineRenderer, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_2: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemInt32_2: %SystemInt32, null
+    __lcl_obj_UnityEngineGameObject_0: %UnityEngineGameObject, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __lcl_t_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_7: %SystemSingle, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_SystemBoolean_8: %SystemBoolean, null
+    __intnl_SystemBoolean_9: %SystemBoolean, null
+    __intnl_SystemBoolean_10: %SystemBoolean, null
+    __intnl_SystemBoolean_11: %SystemBoolean, null
+    __intnl_SystemBoolean_12: %SystemBoolean, null
+    __intnl_UnityEngineObject_2: %UnityEngineObject, null
+    __intnl_UnityEngineObject_3: %UnityEngineObject, null
+    __intnl_UnityEngineTransform_3: %UnityEngineTransform, null
+    __intnl_UnityEngineTransform_4: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_1: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_3: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineTransform_5: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_2: %UnityEngineVector3, null
+    __intnl_UnityEngineTransform_6: %UnityEngineTransform, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+    __intnl_SystemSingle_8: %SystemSingle, null
+    __intnl_SystemSingle_9: %SystemSingle, null
+    __intnl_SystemSingle_10: %SystemSingle, null
+    __intnl_SystemSingle_11: %SystemSingle, null
+    __intnl_SystemInt32_3: %SystemInt32, null
+    __intnl_SystemBoolean_13: %SystemBoolean, null
+    __intnl_SystemInt32_4: %SystemInt32, null
+    __intnl_SystemInt32_5: %SystemInt32, null
+    __intnl_SystemBoolean_14: %SystemBoolean, null
+    __lcl_obj_UnityEngineGameObject_1: %UnityEngineGameObject, null
+    __intnl_SystemBoolean_15: %SystemBoolean, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# FT_TeleportPortal.Start()
+# 
+        PUSH, FadeObject
+        PUSH, __const_SystemType_0
+        PUSH, __intnl_UnityEngineComponent_0
+        EXTERN, "UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __intnl_UnityEngineComponent_0
+        PUSH, udon
+        COPY
+        PUSH, udon
+        PUSH, __const_SystemString_0
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, stayTimeToTeleport
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, enteredTime
+        EXTERN, "UnityEngineTime.__get_time__SystemSingle"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerTriggerEnter
+    _onPlayerTriggerEnter:
+        PUSH, __const_SystemUInt32_0
+# 
+# FT_TeleportPortal.OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, onPlayerTriggerEnterPlayer
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000f4
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, isTeleporting
+        JUMP_IF_FALSE, 0x0000010c
+        JUMP, 0x00000188
+        PUSH, FadeObject
+        PUSH, __const_SystemType_0
+        PUSH, __intnl_UnityEngineComponent_1
+        EXTERN, "UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __intnl_UnityEngineComponent_1
+        PUSH, udon
+        COPY
+        PUSH, udon
+        PUSH, __const_SystemString_0
+        PUSH, __intnl_SystemObject_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_1
+        PUSH, stayTimeToTeleport
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, enteredTime
+        EXTERN, "UnityEngineTime.__get_time__SystemSingle"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerTriggerStay
+    _onPlayerTriggerStay:
+        PUSH, __const_SystemUInt32_0
+# 
+# FT_TeleportPortal.OnPlayerTriggerStay(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, onPlayerTriggerStayPlayer
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x000001f8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, isTeleporting
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000270
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineTime.__get_time__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, enteredTime
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, stayTimeToTeleport
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000878
+        PUSH, udon
+        PUSH, __const_SystemString_1
+        PUSH, __intnl_SystemObject_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_2
+        PUSH, fadein_end
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, udon
+        PUSH, __const_SystemString_2
+        PUSH, __intnl_SystemObject_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_3
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_2
+        PUSH, fadein_end
+        PUSH, dark_end
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, udon
+        PUSH, __const_SystemString_2
+        PUSH, __intnl_SystemObject_4
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_4
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_4
+        PUSH, fadein_end
+        PUSH, teleportTime
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, teleportTime
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000003cc
+        PUSH, __const_SystemSingle_2
+        PUSH, teleportTime
+        COPY
+        PUSH, udon
+        PUSH, __const_SystemString_3
+        PUSH, __intnl_SystemObject_5
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_5
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_5
+        PUSH, dark_end
+        PUSH, fadeout_end
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, udon
+        PUSH, __const_SystemString_4
+        PUSH, __intnl_SystemObject_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_6
+        PUSH, __intnl_SystemSingle_6
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_6
+        PUSH, fadeout_end
+        PUSH, interval_end
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, udon
+        PUSH, __const_SystemString_5
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, canMove
+        COPY
+        PUSH, udon
+        PUSH, __const_SystemString_6
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, teleportSE
+        COPY
+        PUSH, udon
+        PUSH, __const_SystemString_7
+        PUSH, __intnl_SystemObject_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_9
+        PUSH, playSEOnTeleport
+        COPY
+        PUSH, FadeObject
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __const_SystemType_1
+        PUSH, audioSource
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, FadeObject
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, FadeObject
+        PUSH, __intnl_UnityEngineTransform_1
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_1
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, FadeObject
+        PUSH, __intnl_UnityEngineTransform_2
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_2
+        PUSH, __const_SystemType_2
+        PUSH, __intnl_UnityEngineRenderer_0
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, __intnl_UnityEngineRenderer_0
+        PUSH, fadeMaterial
+        EXTERN, "UnityEngineRenderer.__get_sharedMaterial__UnityEngineMaterial"
+        PUSH, fadeMaterial
+        PUSH, __const_SystemString_8
+        PUSH, __const_SystemSingle_1
+        EXTERN, "UnityEngineMaterial.__SetFloat__SystemString_SystemSingle__SystemVoid"
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x0000077c
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_2
+        COPY
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x0000077c
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __lcl_obj_UnityEngineGameObject_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __lcl_obj_UnityEngineGameObject_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00000754
+        PUSH, __lcl_obj_UnityEngineGameObject_0
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __const_SystemInt32_1
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000694
+        PUSH, canMove
+        JUMP_IF_FALSE, 0x00000794
+        JUMP, 0x000007BC
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid"
+        PUSH, teleportSE
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x0000082c
+        PUSH, playSEOnTeleport
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x00000854
+        PUSH, audioSource
+        PUSH, teleportSE
+        EXTERN, "UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid"
+        PUSH, __const_SystemBoolean_0
+        PUSH, isTeleporting
+        COPY
+        PUSH, startTime
+        EXTERN, "UnityEngineTime.__get_time__SystemSingle"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# FT_TeleportPortal.Update()
+# 
+        PUSH, isTeleporting
+        JUMP_IF_FALSE, 0x00000f1c
+        PUSH, __intnl_SystemSingle_7
+        EXTERN, "UnityEngineTime.__get_time__SystemSingle"
+        PUSH, __intnl_SystemSingle_7
+        PUSH, startTime
+        PUSH, __lcl_t_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, teleportTime
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000924
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, teleportTime
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000acc
+        PUSH, teleportSE
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_3
+        COPY
+        PUSH, __intnl_UnityEngineObject_2
+        PUSH, __intnl_UnityEngineObject_3
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x000009a0
+        PUSH, playSEOnTeleport
+        PUSH, __intnl_SystemBoolean_8
+        COPY
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x000009c8
+        PUSH, audioSource
+        PUSH, teleportSE
+        EXTERN, "UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid"
+        PUSH, FadeObject
+        PUSH, __intnl_UnityEngineTransform_3
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, teleportPoint
+        PUSH, __intnl_UnityEngineTransform_4
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_4
+        PUSH, __intnl_UnityEngineVector3_1
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_3
+        PUSH, __intnl_UnityEngineVector3_1
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, teleportPoint
+        PUSH, __intnl_UnityEngineTransform_5
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_5
+        PUSH, __intnl_UnityEngineVector3_2
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, teleportPoint
+        PUSH, __intnl_UnityEngineTransform_6
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_6
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__get_rotation__UnityEngineQuaternion"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        PUSH, __intnl_UnityEngineVector3_2
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid"
+        PUSH, __const_SystemSingle_3
+        PUSH, teleportTime
+        COPY
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, fadein_end
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x00000b50
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, fadein_end
+        PUSH, __intnl_SystemSingle_8
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, fadeMaterial
+        PUSH, __const_SystemString_8
+        PUSH, __intnl_SystemSingle_8
+        EXTERN, "UnityEngineMaterial.__SetFloat__SystemString_SystemSingle__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, dark_end
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x00000bb4
+        PUSH, fadeMaterial
+        PUSH, __const_SystemString_8
+        PUSH, __const_SystemSingle_4
+        EXTERN, "UnityEngineMaterial.__SetFloat__SystemString_SystemSingle__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, fadeout_end
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        JUMP_IF_FALSE, 0x00000c98
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, dark_end
+        PUSH, __intnl_SystemSingle_8
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, fadeout_end
+        PUSH, dark_end
+        PUSH, __intnl_SystemSingle_9
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_8
+        PUSH, __intnl_SystemSingle_9
+        PUSH, __intnl_SystemSingle_10
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_4
+        PUSH, __intnl_SystemSingle_10
+        PUSH, __intnl_SystemSingle_11
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, fadeMaterial
+        PUSH, __const_SystemString_8
+        PUSH, __intnl_SystemSingle_11
+        EXTERN, "UnityEngineMaterial.__SetFloat__SystemString_SystemSingle__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, fadeout_end
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_11
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x00000d68
+        PUSH, fadeMaterial
+        PUSH, __const_SystemString_8
+        PUSH, __const_SystemSingle_1
+        EXTERN, "UnityEngineMaterial.__SetFloat__SystemString_SystemSingle__SystemVoid"
+        PUSH, FadeObject
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __const_SystemSingle_3
+        PUSH, fadeout_end
+        COPY
+        PUSH, canMove
+        JUMP_IF_FALSE, 0x00000d2c
+        JUMP, 0x00000D54
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __lcl_t_SystemSingle_0
+        PUSH, interval_end
+        PUSH, __intnl_SystemBoolean_12
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_12
+        JUMP_IF_FALSE, 0x00000f1c
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_3
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_13
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_13
+        JUMP_IF_FALSE, 0x00000ef4
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_4
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_5
+        COPY
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemInt32_4
+        PUSH, __intnl_SystemBoolean_14
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_14
+        JUMP_IF_FALSE, 0x00000ef4
+        PUSH, disableObjects
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __lcl_obj_UnityEngineGameObject_1
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __lcl_obj_UnityEngineGameObject_1
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_3
+        COPY
+        PUSH, __intnl_UnityEngineObject_2
+        PUSH, __intnl_UnityEngineObject_3
+        PUSH, __intnl_SystemBoolean_15
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_15
+        JUMP_IF_FALSE, 0x00000ecc
+        PUSH, __lcl_obj_UnityEngineGameObject_1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __const_SystemInt32_1
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000E0C
+        PUSH, __const_SystemBoolean_1
+        PUSH, isTeleporting
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

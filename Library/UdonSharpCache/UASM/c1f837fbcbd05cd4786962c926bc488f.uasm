@@ -1,0 +1,126 @@
+.data_start
+    .export particles
+    .export audioSource
+    .export audioClip
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    particles: %UnityEngineParticleSystemArray, null
+    audioSource: %UnityEngineAudioSource, null
+    audioClip: %UnityEngineAudioClip, null
+    isPlay: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __lcl_i_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_UnityEngineParticleSystem_0: %UnityEngineParticleSystem, null
+    __lcl_i_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_UnityEngineParticleSystem_1: %UnityEngineParticleSystem, null
+.data_end
+.code_start
+    .export _onEnable
+    _onEnable:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.OnEnableParticlePlayer.OnEnable()
+# 
+        PUSH, isPlay
+        JUMP_IF_FALSE, 0x0000002c
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemBoolean_0
+        PUSH, isPlay
+        COPY
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_0
+        COPY
+        PUSH, particles
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000f4
+        PUSH, particles
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineParticleSystem_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineParticleSystem_0
+        EXTERN, "UnityEngineParticleSystem.__Play__SystemVoid"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000054
+        PUSH, audioSource
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000164
+        PUSH, audioSource
+        PUSH, audioClip
+        EXTERN, "UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onDisable
+    _onDisable:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.OnEnableParticlePlayer.OnDisable()
+# 
+        PUSH, isPlay
+        JUMP_IF_FALSE, 0x00000198
+        JUMP, 0x000001AC
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemBoolean_1
+        PUSH, isPlay
+        COPY
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_1
+        COPY
+        PUSH, particles
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000274
+        PUSH, particles
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __intnl_UnityEngineParticleSystem_1
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineParticleSystem_1
+        EXTERN, "UnityEngineParticleSystem.__Stop__SystemVoid"
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_1
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000001D4
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

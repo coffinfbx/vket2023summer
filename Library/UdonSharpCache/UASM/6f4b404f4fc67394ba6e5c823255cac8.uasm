@@ -1,0 +1,321 @@
+.data_start
+    .export m_byTime
+    .export m_hourHand
+    .export m_minuteHand
+    .export m_secoundHand
+    .export m_hourTriggers
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    m_byTime: %SystemString, null
+    m_hourHand: %UnityEngineTransform, null
+    m_minuteHand: %UnityEngineTransform, null
+    m_secoundHand: %UnityEngineTransform, null
+    m_hourTriggers: %UnityEngineGameObjectArray, null
+    m_last_time: %SystemInt32, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemInt32_2: %SystemInt32, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __const_SystemInt32_3: %SystemInt32, null
+    __const_SystemSingle_2: %SystemSingle, null
+    __const_SystemSingle_3: %SystemSingle, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __lcl_now_SystemDateTime_0: %SystemDateTime, null
+    __intnl_SystemDateTime_0: %SystemDateTime, null
+    __intnl_SystemTimeZoneInfo_0: %SystemTimeZoneInfo, null
+    __lcl_i_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineGameObject_0: %UnityEngineGameObject, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_UnityEngineGameObject_1: %UnityEngineGameObject, null
+    __lcl_now_SystemDateTime_1: %SystemDateTime, null
+    __intnl_SystemDateTime_1: %SystemDateTime, null
+    __intnl_SystemTimeZoneInfo_1: %SystemTimeZoneInfo, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemInt32_2: %SystemInt32, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemInt32_3: %SystemInt32, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+    __intnl_SystemInt32_4: %SystemInt32, null
+    __intnl_SystemInt32_5: %SystemInt32, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __intnl_SystemInt32_6: %SystemInt32, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __intnl_SystemSingle_6: %SystemSingle, null
+    __intnl_SystemSingle_7: %SystemSingle, null
+    __intnl_UnityEngineQuaternion_1: %UnityEngineQuaternion, null
+    __intnl_SystemInt32_7: %SystemInt32, null
+    __intnl_SystemInt32_8: %SystemInt32, null
+    __intnl_SystemSingle_8: %SystemSingle, null
+    __intnl_SystemInt32_9: %SystemInt32, null
+    __intnl_SystemSingle_9: %SystemSingle, null
+    __intnl_SystemSingle_10: %SystemSingle, null
+    __intnl_SystemSingle_11: %SystemSingle, null
+    __intnl_UnityEngineQuaternion_2: %UnityEngineQuaternion, null
+    __intnl_SystemInt32_10: %SystemInt32, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_UnityEngineGameObject_2: %UnityEngineGameObject, null
+    __intnl_UnityEngineObject_2: %UnityEngineObject, null
+    __intnl_UnityEngineObject_3: %UnityEngineObject, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_UnityEngineGameObject_3: %UnityEngineGameObject, null
+    __intnl_SystemInt32_11: %SystemInt32, null
+    __intnl_UnityEngineGameObject_4: %UnityEngineGameObject, null
+    __intnl_UnityEngineObject_4: %UnityEngineObject, null
+    __intnl_UnityEngineObject_5: %UnityEngineObject, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemInt32_12: %SystemInt32, null
+    __intnl_UnityEngineGameObject_5: %UnityEngineGameObject, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.CuckooClock.Start()
+# 
+        PUSH, __intnl_SystemDateTime_0
+        EXTERN, "SystemDateTime.__get_UtcNow__SystemDateTime"
+        PUSH, m_byTime
+        PUSH, __intnl_SystemTimeZoneInfo_0
+        EXTERN, "SystemTimeZoneInfo.__FindSystemTimeZoneById__SystemString__SystemTimeZoneInfo"
+        PUSH, __intnl_SystemDateTime_0
+        PUSH, __intnl_SystemTimeZoneInfo_0
+        PUSH, __lcl_now_SystemDateTime_0
+        EXTERN, "SystemTimeZoneInfo.__ConvertTimeFromUtc__SystemDateTime_SystemTimeZoneInfo__SystemDateTime"
+        PUSH, __lcl_now_SystemDateTime_0
+        PUSH, m_last_time
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_0
+        COPY
+        PUSH, m_hourTriggers
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x0000019c
+        PUSH, m_hourTriggers
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineGameObject_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000174
+        PUSH, m_hourTriggers
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineGameObject_1
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x0000007C
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.CuckooClock.Update()
+# 
+        PUSH, __intnl_SystemDateTime_1
+        EXTERN, "SystemDateTime.__get_UtcNow__SystemDateTime"
+        PUSH, m_byTime
+        PUSH, __intnl_SystemTimeZoneInfo_1
+        EXTERN, "SystemTimeZoneInfo.__FindSystemTimeZoneById__SystemString__SystemTimeZoneInfo"
+        PUSH, __intnl_SystemDateTime_1
+        PUSH, __intnl_SystemTimeZoneInfo_1
+        PUSH, __lcl_now_SystemDateTime_1
+        EXTERN, "SystemTimeZoneInfo.__ConvertTimeFromUtc__SystemDateTime_SystemTimeZoneInfo__SystemDateTime"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __const_SystemInt32_2
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "SystemDateTime.__get_Minute__SystemInt32"
+        PUSH, __intnl_SystemInt32_3
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineQuaternion.__Euler__SystemSingle_SystemSingle_SystemSingle__UnityEngineQuaternion"
+        PUSH, m_hourHand
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_4
+        EXTERN, "SystemDateTime.__get_Minute__SystemInt32"
+        PUSH, __intnl_SystemInt32_4
+        PUSH, __const_SystemInt32_3
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "SystemDateTime.__get_Second__SystemInt32"
+        PUSH, __intnl_SystemInt32_6
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_5
+        PUSH, __const_SystemSingle_2
+        PUSH, __intnl_SystemSingle_6
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __intnl_SystemSingle_6
+        PUSH, __intnl_SystemSingle_7
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_7
+        PUSH, __intnl_UnityEngineQuaternion_1
+        EXTERN, "UnityEngineQuaternion.__Euler__SystemSingle_SystemSingle_SystemSingle__UnityEngineQuaternion"
+        PUSH, m_minuteHand
+        PUSH, __intnl_UnityEngineQuaternion_1
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_7
+        EXTERN, "SystemDateTime.__get_Second__SystemInt32"
+        PUSH, __intnl_SystemInt32_7
+        PUSH, __const_SystemInt32_3
+        PUSH, __intnl_SystemInt32_8
+        EXTERN, "SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __intnl_SystemInt32_8
+        PUSH, __intnl_SystemSingle_8
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_9
+        EXTERN, "SystemDateTime.__get_Millisecond__SystemInt32"
+        PUSH, __intnl_SystemInt32_9
+        PUSH, __intnl_SystemSingle_9
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_9
+        PUSH, __const_SystemSingle_3
+        PUSH, __intnl_SystemSingle_10
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_8
+        PUSH, __intnl_SystemSingle_10
+        PUSH, __intnl_SystemSingle_11
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_11
+        PUSH, __intnl_UnityEngineQuaternion_2
+        EXTERN, "UnityEngineQuaternion.__Euler__SystemSingle_SystemSingle_SystemSingle__UnityEngineQuaternion"
+        PUSH, m_secoundHand
+        PUSH, __intnl_UnityEngineQuaternion_2
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_10
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, m_last_time
+        PUSH, __intnl_SystemInt32_10
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x000006f0
+        PUSH, m_hourTriggers
+        PUSH, m_last_time
+        PUSH, __intnl_UnityEngineGameObject_2
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_2
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_3
+        COPY
+        PUSH, __intnl_UnityEngineObject_2
+        PUSH, __intnl_UnityEngineObject_3
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000005f8
+        PUSH, m_hourTriggers
+        PUSH, m_last_time
+        PUSH, __intnl_UnityEngineGameObject_3
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_3
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, m_last_time
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_11
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, m_hourTriggers
+        PUSH, __intnl_SystemInt32_11
+        PUSH, __intnl_UnityEngineGameObject_4
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_4
+        PUSH, __intnl_UnityEngineObject_4
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_5
+        COPY
+        PUSH, __intnl_UnityEngineObject_4
+        PUSH, __intnl_UnityEngineObject_5
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x000006f0
+        PUSH, __lcl_now_SystemDateTime_1
+        PUSH, __intnl_SystemInt32_12
+        EXTERN, "SystemDateTime.__get_Hour__SystemInt32"
+        PUSH, m_hourTriggers
+        PUSH, __intnl_SystemInt32_12
+        PUSH, __intnl_UnityEngineGameObject_5
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_UnityEngineGameObject_5
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

@@ -1,0 +1,417 @@
+.data_start
+    .export m_return_point
+    .export m_body
+    .export m_power
+    .export m_max_speed
+    .export m_max_use_time
+    .export m_need_recharge_time
+    .export m_chageing_time
+    .export m_particle
+    .export m_show_energy
+    .export m_sound
+    .export m_reset_position
+    .export m_reset_pickup
+    .export m_reset_time
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    m_return_point: %UnityEngineTransform, null
+    m_body: %UnityEngineTransform, null
+    m_power: %SystemSingle, null
+    m_max_speed: %SystemSingle, null
+    m_max_use_time: %SystemSingle, null
+    m_need_recharge_time: %SystemSingle, null
+    m_chageing_time: %SystemSingle, null
+    m_particle: %UnityEngineParticleSystem, null
+    m_show_energy: %UnityEngineUIImage, null
+    m_sound: %UnityEngineAudioSource, null
+    m_reset_position: %UnityEngineTransform, null
+    m_reset_pickup: %VRCSDK3ComponentsVRCPickup, null
+    m_reset_time: %SystemInt32, null
+    IsUse: %SystemBoolean, null
+    _energy: %SystemSingle, null
+    _rechage_rate: %SystemSingle, null
+    _timer: %SystemSingle, null
+    isPicked: %SystemBoolean, null
+    _reset_time: %SystemDateTime, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_UnityEngineObject_2: %UnityEngineObject, null
+    __intnl_UnityEngineObject_3: %UnityEngineObject, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_UnityEngineObject_4: %UnityEngineObject, null
+    __intnl_UnityEngineObject_5: %UnityEngineObject, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_UnityEngineObject_6: %UnityEngineObject, null
+    __intnl_UnityEngineObject_7: %UnityEngineObject, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_UnityEngineObject_8: %UnityEngineObject, null
+    __intnl_UnityEngineObject_9: %UnityEngineObject, null
+    __intnl_SystemBoolean_8: %SystemBoolean, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemBoolean_9: %SystemBoolean, null
+    __intnl_UnityEngineObject_10: %UnityEngineObject, null
+    __intnl_UnityEngineObject_11: %UnityEngineObject, null
+    __intnl_UnityEngineObject_12: %UnityEngineObject, null
+    __intnl_UnityEngineObject_13: %UnityEngineObject, null
+    __lcl_vector_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_1: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_UnityEngineVector3_2: %UnityEngineVector3, null
+    __intnl_SystemBoolean_10: %SystemBoolean, null
+    __intnl_SystemBoolean_11: %SystemBoolean, null
+    __intnl_SystemDateTime_0: %SystemDateTime, null
+    __intnl_SystemDouble_0: %SystemDouble, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.JetGimmick.Start()
+# 
+        PUSH, m_max_use_time
+        PUSH, _energy
+        COPY
+        PUSH, m_max_use_time
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x0000006c
+        PUSH, m_chageing_time
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x0000009c
+        PUSH, m_max_use_time
+        PUSH, m_chageing_time
+        PUSH, _rechage_rate
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPickupUseDown
+    _onPickupUseDown:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.JetGimmick.OnPickupUseDown()
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, IsUse
+        COPY
+        PUSH, m_particle
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000134
+        PUSH, m_particle
+        EXTERN, "UnityEngineParticleSystem.__Play__SystemVoid"
+        PUSH, m_sound
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_3
+        COPY
+        PUSH, __intnl_UnityEngineObject_2
+        PUSH, __intnl_UnityEngineObject_3
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000019c
+        PUSH, m_sound
+        EXTERN, "UnityEngineAudioSource.__Play__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPickupUseUp
+    _onPickupUseUp:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.JetGimmick.OnPickupUseUp()
+# 
+        PUSH, __const_SystemBoolean_1
+        PUSH, IsUse
+        COPY
+        PUSH, m_particle
+        PUSH, __intnl_UnityEngineObject_4
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_5
+        COPY
+        PUSH, __intnl_UnityEngineObject_4
+        PUSH, __intnl_UnityEngineObject_5
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x00000234
+        PUSH, m_particle
+        EXTERN, "UnityEngineParticleSystem.__Stop__SystemVoid"
+        PUSH, m_sound
+        PUSH, __intnl_UnityEngineObject_6
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_7
+        COPY
+        PUSH, __intnl_UnityEngineObject_6
+        PUSH, __intnl_UnityEngineObject_7
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x0000029c
+        PUSH, m_sound
+        EXTERN, "UnityEngineAudioSource.__Stop__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.JetGimmick.Update()
+# 
+        PUSH, IsUse
+        PUSH, __intnl_SystemBoolean_5
+        COPY
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x000002fc
+        PUSH, _energy
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x00000580
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetVelocity__UnityEngineVector3"
+        PUSH, m_body
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_up__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_0
+        PUSH, m_power
+        PUSH, __intnl_UnityEngineVector3_1
+        EXTERN, "UnityEngineVector3.__op_Multiply__UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineVector3_1
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        EXTERN, "UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineVector3.__get_magnitude__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, m_max_speed
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x0000040c
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineVector3_2
+        EXTERN, "UnityEngineVector3.__get_normalized__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_2
+        PUSH, m_max_speed
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        EXTERN, "UnityEngineVector3.__op_Multiply__UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __lcl_vector_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetVelocity__UnityEngineVector3__SystemVoid"
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "UnityEngineTime.__get_deltaTime__SystemSingle"
+        PUSH, _energy
+        PUSH, __intnl_SystemSingle_1
+        PUSH, _energy
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, m_need_recharge_time
+        PUSH, _timer
+        COPY
+        PUSH, _energy
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000578
+        PUSH, m_particle
+        PUSH, __intnl_UnityEngineObject_8
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_9
+        COPY
+        PUSH, __intnl_UnityEngineObject_8
+        PUSH, __intnl_UnityEngineObject_9
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x00000510
+        PUSH, m_particle
+        EXTERN, "UnityEngineParticleSystem.__Stop__SystemVoid"
+        PUSH, m_sound
+        PUSH, __intnl_UnityEngineObject_10
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_11
+        COPY
+        PUSH, __intnl_UnityEngineObject_10
+        PUSH, __intnl_UnityEngineObject_11
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x00000578
+        PUSH, m_sound
+        EXTERN, "UnityEngineAudioSource.__Play__SystemVoid"
+        JUMP, 0x000006AC
+        PUSH, _timer
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x000005e8
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineTime.__get_deltaTime__SystemSingle"
+        PUSH, _timer
+        PUSH, __intnl_SystemSingle_0
+        PUSH, _timer
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        JUMP, 0x000006AC
+        PUSH, _energy
+        PUSH, m_max_use_time
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x000006ac
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineTime.__get_deltaTime__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, _rechage_rate
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, _energy
+        PUSH, __intnl_SystemSingle_1
+        PUSH, _energy
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, _energy
+        PUSH, m_max_use_time
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x000006ac
+        PUSH, m_max_use_time
+        PUSH, _energy
+        COPY
+        PUSH, m_show_energy
+        PUSH, __intnl_UnityEngineObject_8
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_9
+        COPY
+        PUSH, __intnl_UnityEngineObject_8
+        PUSH, __intnl_UnityEngineObject_9
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x0000073c
+        PUSH, _energy
+        PUSH, m_max_use_time
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, m_show_energy
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineUIImage.__set_fillAmount__SystemSingle__SystemVoid"
+        PUSH, m_reset_position
+        PUSH, __intnl_UnityEngineObject_10
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_11
+        COPY
+        PUSH, __intnl_UnityEngineObject_10
+        PUSH, __intnl_UnityEngineObject_11
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x000007dc
+        PUSH, m_reset_pickup
+        PUSH, __intnl_UnityEngineObject_12
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_13
+        COPY
+        PUSH, __intnl_UnityEngineObject_12
+        PUSH, __intnl_UnityEngineObject_13
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x00000950
+        PUSH, m_reset_pickup
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        JUMP_IF_FALSE, 0x00000878
+        PUSH, __const_SystemBoolean_0
+        PUSH, isPicked
+        COPY
+        PUSH, __intnl_SystemDateTime_0
+        EXTERN, "SystemDateTime.__get_UtcNow__SystemDateTime"
+        PUSH, m_reset_time
+        PUSH, __intnl_SystemDouble_0
+        EXTERN, "SystemConvert.__ToDouble__SystemInt32__SystemDouble"
+        PUSH, __intnl_SystemDateTime_0
+        PUSH, __intnl_SystemDouble_0
+        PUSH, _reset_time
+        EXTERN, "SystemDateTime.__AddSeconds__SystemDouble__SystemDateTime"
+        JUMP, 0x00000950
+        PUSH, __intnl_SystemDateTime_0
+        EXTERN, "SystemDateTime.__get_UtcNow__SystemDateTime"
+        PUSH, __intnl_SystemDateTime_0
+        PUSH, _reset_time
+        PUSH, __intnl_SystemBoolean_11
+        EXTERN, "SystemDateTime.__op_GreaterThan__SystemDateTime_SystemDateTime__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x000008cc
+        PUSH, isPicked
+        PUSH, __intnl_SystemBoolean_11
+        COPY
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x00000950
+        PUSH, __const_SystemBoolean_1
+        PUSH, isPicked
+        COPY
+        PUSH, m_reset_position
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, m_body
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, m_reset_position
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__get_rotation__UnityEngineQuaternion"
+        PUSH, m_body
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_rotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

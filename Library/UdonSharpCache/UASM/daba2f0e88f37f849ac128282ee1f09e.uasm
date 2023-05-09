@@ -1,0 +1,112 @@
+.data_start
+    .export m_text
+    .export lot
+    .export m_audioSource
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    m_text: %UnityEngineUIText, null
+    lot: %SystemString, null
+    m_audioSource: %UnityEngineAudioSource, null
+    _count: %SystemInt32, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    onPlayerJoinedPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __const_SystemObject_0: %SystemObject, null
+    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_SystemString_1: %SystemString, null
+    __intnl_SystemString_2: %SystemString, null
+    __intnl_SystemString_3: %SystemString, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemString_4: %SystemString, null
+    __intnl_SystemString_5: %SystemString, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.UserCounter.Start()
+# 
+        PUSH, _count
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerCount__SystemInt32"
+        PUSH, _count
+        PUSH, __intnl_SystemString_0
+        EXTERN, "SystemInt32.__ToString__SystemString"
+        PUSH, __intnl_SystemString_0
+        PUSH, lot
+        PUSH, __intnl_SystemString_1
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, m_text
+        PUSH, __intnl_SystemString_1
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerJoined
+    _onPlayerJoined:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.UserCounter.OnPlayerJoined(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, _count
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerCount__SystemInt32"
+        PUSH, _count
+        PUSH, __intnl_SystemString_2
+        EXTERN, "SystemInt32.__ToString__SystemString"
+        PUSH, __intnl_SystemString_2
+        PUSH, lot
+        PUSH, __intnl_SystemString_3
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, m_text
+        PUSH, __intnl_SystemString_3
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, m_audioSource
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000154
+        PUSH, m_audioSource
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineAudioSource.__get_isPlaying__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000174
+        PUSH, m_audioSource
+        EXTERN, "UnityEngineAudioSource.__Play__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerLeft
+    _onPlayerLeft:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.UserCounter.OnPlayerLeft(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, _count
+        PUSH, __const_SystemInt32_0
+        PUSH, _count
+        EXTERN, "SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, _count
+        PUSH, __intnl_SystemString_4
+        EXTERN, "SystemInt32.__ToString__SystemString"
+        PUSH, __intnl_SystemString_4
+        PUSH, lot
+        PUSH, __intnl_SystemString_5
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, m_text
+        PUSH, __intnl_SystemString_5
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

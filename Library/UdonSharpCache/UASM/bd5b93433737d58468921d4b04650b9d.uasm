@@ -1,0 +1,390 @@
+.data_start
+    .export IsOnece
+    .export reloadTime
+    .export switchRange
+    .export switchRangeCollider
+    .export isInteractActive
+    .export pickup
+    .export isNotPickupedHand
+    .export udonBehaviour
+    .export udonEventName
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    IsOnece: %SystemBoolean, null
+    reloadTime: %SystemSingle, null
+    switchRange: %SystemSingle, null
+    switchRangeCollider: %UnityEngineSphereCollider, null
+    isInteractActive: %SystemBoolean, null
+    pickup: %VRCSDK3ComponentsVRCPickup, null
+    isNotPickupedHand: %SystemBoolean, null
+    udonBehaviour: %VRCUdonUdonBehaviour, null
+    udonEventName: %SystemString, null
+    nextTime: %SystemDateTime, null
+    isPlayed: %SystemBoolean, null
+    _switchRange: %SystemSingle, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_VRCSDKBaseVRC_PickupPickupHand_0: %VRCSDKBaseVRC_PickupPickupHand, null
+    __const_SystemObject_0: %SystemObject, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_VRCSDKBaseVRCPlayerApiTrackingDataType_0: %VRCSDKBaseVRCPlayerApiTrackingDataType, null
+    __const_VRCSDKBaseVRC_PickupPickupHand_1: %VRCSDKBaseVRC_PickupPickupHand, null
+    __const_VRCSDKBaseVRCPlayerApiTrackingDataType_1: %VRCSDKBaseVRCPlayerApiTrackingDataType, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemDateTime_0: %SystemDateTime, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_SystemBoolean_8: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_2: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_VRCSDK3ComponentsVRCPickup_0: %VRCSDK3ComponentsVRCPickup, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_9: %SystemBoolean, null
+    __intnl_UnityEngineObject_2: %UnityEngineObject, null
+    __intnl_UnityEngineObject_3: %UnityEngineObject, null
+    __intnl_VRCSDKBaseVRC_PickupPickupHand_0: %VRCSDKBaseVRC_PickupPickupHand, null
+    __intnl_SystemBoolean_10: %SystemBoolean, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_1: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_3: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_VRCSDKBaseVRCPlayerApiTrackingData_0: %VRCSDKBaseVRCPlayerApiTrackingData, null
+    __intnl_UnityEngineVector3_2: %UnityEngineVector3, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemBoolean_11: %SystemBoolean, null
+    __intnl_SystemBoolean_12: %SystemBoolean, null
+    __intnl_SystemBoolean_13: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_4: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_VRCSDK3ComponentsVRCPickup_1: %VRCSDK3ComponentsVRCPickup, null
+    __intnl_UnityEngineObject_4: %UnityEngineObject, null
+    __intnl_UnityEngineObject_5: %UnityEngineObject, null
+    __intnl_SystemBoolean_14: %SystemBoolean, null
+    __intnl_UnityEngineObject_6: %UnityEngineObject, null
+    __intnl_UnityEngineObject_7: %UnityEngineObject, null
+    __intnl_VRCSDKBaseVRC_PickupPickupHand_1: %VRCSDKBaseVRC_PickupPickupHand, null
+    __intnl_SystemBoolean_15: %SystemBoolean, null
+    __intnl_UnityEngineVector3_3: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_4: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_5: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_VRCSDKBaseVRCPlayerApiTrackingData_1: %VRCSDKBaseVRCPlayerApiTrackingData, null
+    __intnl_UnityEngineVector3_5: %UnityEngineVector3, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemDateTime_1: %SystemDateTime, null
+    __intnl_SystemDouble_0: %SystemDouble, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_SystemBoolean_16: %SystemBoolean, null
+    __intnl_SystemDateTime_2: %SystemDateTime, null
+    __intnl_SystemDateTime_3: %SystemDateTime, null
+    __intnl_SystemDouble_1: %SystemDouble, null
+    __intnl_SystemString_1: %SystemString, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.OnTriggerHandCustomEvent.Start()
+# 
+        PUSH, isInteractActive
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000038
+        JUMP, 0x00000078
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__set_DisableInteractive__SystemBoolean__SystemVoid"
+        PUSH, switchRange
+        PUSH, switchRange
+        PUSH, _switchRange
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.OnTriggerHandCustomEvent.Update()
+# 
+        PUSH, isPlayed
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x0000011c
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        PUSH, __intnl_SystemBoolean_3
+        COPY
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x00000170
+        PUSH, __intnl_SystemDateTime_0
+        EXTERN, "SystemDateTime.__get_Now__SystemDateTime"
+        PUSH, __intnl_SystemDateTime_0
+        PUSH, nextTime
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "SystemDateTime.__op_GreaterThanOrEqual__SystemDateTime_SystemDateTime__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        PUSH, __intnl_SystemBoolean_2
+        COPY
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x000006c0
+        PUSH, isNotPickupedHand
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x000001c4
+        JUMP, 0x0000023C
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        PUSH, __const_VRCSDKBaseVRC_PickupPickupHand_0
+        PUSH, __intnl_VRCSDK3ComponentsVRCPickup_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPickupInHand__VRCSDKBaseVRC_PickupPickupHand__VRCSDKBaseVRC_Pickup"
+        PUSH, __intnl_VRCSDK3ComponentsVRCPickup_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        PUSH, __intnl_SystemBoolean_7
+        COPY
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000324
+        PUSH, pickup
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_3
+        COPY
+        PUSH, __intnl_UnityEngineObject_2
+        PUSH, __intnl_UnityEngineObject_3
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x000002c0
+        JUMP, 0x00000310
+        PUSH, pickup
+        PUSH, __intnl_VRCSDKBaseVRC_PickupPickupHand_0
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentHand__VRCSDKBaseVRC_PickupPickupHand"
+        PUSH, __intnl_VRCSDKBaseVRC_PickupPickupHand_0
+        PUSH, __const_VRCSDKBaseVRC_PickupPickupHand_0
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "SystemObject.__Equals__SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        PUSH, __intnl_SystemBoolean_7
+        COPY
+        PUSH, __intnl_SystemBoolean_7
+        PUSH, __intnl_SystemBoolean_6
+        COPY
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00000400
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        PUSH, __const_VRCSDKBaseVRCPlayerApiTrackingDataType_0
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApiTrackingData_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetTrackingData__VRCSDKBaseVRCPlayerApiTrackingDataType__VRCSDKBaseVRCPlayerApiTrackingData"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApiTrackingData_0
+        PUSH, __intnl_UnityEngineVector3_1
+        EXTERN, "VRCSDKBaseVRCPlayerApiTrackingData.__get_position__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineVector3_1
+        PUSH, __intnl_UnityEngineVector3_2
+        EXTERN, "UnityEngineVector3.__op_Subtraction__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_2
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineVector3.__get_sqrMagnitude__SystemSingle"
+        PUSH, _switchRange
+        PUSH, __intnl_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        PUSH, __intnl_SystemBoolean_5
+        COPY
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x0000042c
+        JUMP, 0x000006AC
+        PUSH, isNotPickupedHand
+        PUSH, __intnl_SystemBoolean_13
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_13
+        JUMP_IF_FALSE, 0x0000045c
+        JUMP, 0x000004D4
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_4
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_4
+        PUSH, __const_VRCSDKBaseVRC_PickupPickupHand_1
+        PUSH, __intnl_VRCSDK3ComponentsVRCPickup_1
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPickupInHand__VRCSDKBaseVRC_PickupPickupHand__VRCSDKBaseVRC_Pickup"
+        PUSH, __intnl_VRCSDK3ComponentsVRCPickup_1
+        PUSH, __intnl_UnityEngineObject_4
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_5
+        COPY
+        PUSH, __intnl_UnityEngineObject_4
+        PUSH, __intnl_UnityEngineObject_5
+        PUSH, __intnl_SystemBoolean_13
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_13
+        PUSH, __intnl_SystemBoolean_12
+        COPY
+        PUSH, __intnl_SystemBoolean_12
+        JUMP_IF_FALSE, 0x000005bc
+        PUSH, pickup
+        PUSH, __intnl_UnityEngineObject_6
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_7
+        COPY
+        PUSH, __intnl_UnityEngineObject_6
+        PUSH, __intnl_UnityEngineObject_7
+        PUSH, __intnl_SystemBoolean_14
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_14
+        JUMP_IF_FALSE, 0x00000558
+        JUMP, 0x000005A8
+        PUSH, pickup
+        PUSH, __intnl_VRCSDKBaseVRC_PickupPickupHand_1
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentHand__VRCSDKBaseVRC_PickupPickupHand"
+        PUSH, __intnl_VRCSDKBaseVRC_PickupPickupHand_1
+        PUSH, __const_VRCSDKBaseVRC_PickupPickupHand_1
+        PUSH, __intnl_SystemBoolean_15
+        EXTERN, "SystemObject.__Equals__SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_15
+        PUSH, __intnl_SystemBoolean_14
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_14
+        PUSH, __intnl_SystemBoolean_12
+        COPY
+        PUSH, __intnl_SystemBoolean_12
+        PUSH, __intnl_SystemBoolean_11
+        COPY
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x00000698
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_5
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_5
+        PUSH, __const_VRCSDKBaseVRCPlayerApiTrackingDataType_1
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApiTrackingData_1
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetTrackingData__VRCSDKBaseVRCPlayerApiTrackingDataType__VRCSDKBaseVRCPlayerApiTrackingData"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApiTrackingData_1
+        PUSH, __intnl_UnityEngineVector3_4
+        EXTERN, "VRCSDKBaseVRCPlayerApiTrackingData.__get_position__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_3
+        PUSH, __intnl_UnityEngineVector3_4
+        PUSH, __intnl_UnityEngineVector3_5
+        EXTERN, "UnityEngineVector3.__op_Subtraction__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_5
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "UnityEngineVector3.__get_sqrMagnitude__SystemSingle"
+        PUSH, _switchRange
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_11
+        EXTERN, "SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_11
+        PUSH, __intnl_SystemBoolean_5
+        COPY
+        PUSH, __intnl_SystemBoolean_5
+        PUSH, __intnl_SystemBoolean_2
+        COPY
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000758
+        PUSH, IsOnece
+        PUSH, isPlayed
+        COPY
+        PUSH, __intnl_SystemDateTime_1
+        EXTERN, "SystemDateTime.__get_Now__SystemDateTime"
+        PUSH, reloadTime
+        PUSH, __intnl_SystemDouble_0
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDateTime_1
+        PUSH, __intnl_SystemDouble_0
+        PUSH, nextTime
+        EXTERN, "SystemDateTime.__AddSeconds__SystemDouble__SystemDateTime"
+        PUSH, udonBehaviour
+# Cow dirty
+        PUSH, udonEventName
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, udonEventName
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _interact
+    _interact:
+        PUSH, __const_SystemUInt32_0
+# 
+# SimpleUDONGimmick.OnTriggerHandCustomEvent.Interact()
+# 
+        PUSH, isPlayed
+        PUSH, __intnl_SystemBoolean_16
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_16
+        JUMP_IF_FALSE, 0x000007cc
+        PUSH, __intnl_SystemDateTime_2
+        EXTERN, "SystemDateTime.__get_Now__SystemDateTime"
+        PUSH, __intnl_SystemDateTime_2
+        PUSH, nextTime
+        PUSH, __intnl_SystemBoolean_16
+        EXTERN, "SystemDateTime.__op_GreaterThanOrEqual__SystemDateTime_SystemDateTime__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_16
+        JUMP_IF_FALSE, 0x00000864
+        PUSH, IsOnece
+        PUSH, isPlayed
+        COPY
+        PUSH, __intnl_SystemDateTime_3
+        EXTERN, "SystemDateTime.__get_Now__SystemDateTime"
+        PUSH, reloadTime
+        PUSH, __intnl_SystemDouble_1
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDateTime_3
+        PUSH, __intnl_SystemDouble_1
+        PUSH, nextTime
+        EXTERN, "SystemDateTime.__AddSeconds__SystemDouble__SystemDateTime"
+        PUSH, udonBehaviour
+# Cow dirty
+        PUSH, udonEventName
+        PUSH, __intnl_SystemString_1
+        COPY
+        PUSH, udonEventName
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end
