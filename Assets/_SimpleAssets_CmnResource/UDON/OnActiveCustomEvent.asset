@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: OnActiveCustomEvent
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 1dbb36272b033d743b639ab9f0e50f81,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 43535af8f5c078349819713cd4bf959f,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export OnEnableCustomEventName\r\n    .export
     OnEnableTargetUdon\r\n    .export OnDisableCustomEventName\r\n    .export OnDisableTargetUdon\r\n   

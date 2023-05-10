@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: VehicleController
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 7ea19019c9da94f4e9d4deb7e6815379,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 6c4274d3496e9ba43a1b90cb85ec9810,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export ConstantForce\r\n    .export Power\r\n   
     \r\n    __instance_0: %UnityEngineConstantForce, null\r\n    __value_0: %UnityEngineVector3,

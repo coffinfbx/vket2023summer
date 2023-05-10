@@ -1,0 +1,1139 @@
+.data_start
+    .export Self
+    .export Other
+    .export _animator
+    .export _nukoTween
+    .export Balloon
+    .export NiniTalkText
+    .export TalkText
+    .export Talks
+    .export AutoTalk
+    .export Order
+    .export TalkInterval
+    .export TalkWeight
+    .export TalkNumber
+    .export TempTalk
+    .export Reserve
+    .export UseTextMeshPro
+    .export TalkTextMeshPro
+    .export TalkTextPro
+    .export _audio
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    Self: %VRCUdonUdonBehaviour, null
+    Other: %VRCUdonUdonBehaviour, null
+    _animator: %UnityEngineAnimator, null
+    _nukoTween: %UnityEngineGameObject, null
+    tween: %VRCUdonUdonBehaviour, null
+    Balloon: %UnityEngineGameObject, null
+    NiniTalkText: %UnityEngineGameObject, null
+    TalkText: %UnityEngineUIText, null
+    Talks: %UnityEngineComponentArray, null
+    AutoTalk: %SystemBoolean, null
+    Order: %SystemBoolean, null
+    TalkInterval: %SystemSingle, null
+    TalkWeight: %SystemSingle, null
+    TalkNumber: %SystemInt32, null
+    TempTalk: %VRCUdonUdonBehaviour, null
+    Reserve: %SystemBoolean, null
+    UseTextMeshPro: %SystemBoolean, null
+    TalkTextMeshPro: %UnityEngineGameObject, null
+    TalkTextPro: %TMProTextMeshProUGUI, null
+    _audio: %UnityEngineAudioSource, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_UnityEngineVector3_0: %UnityEngineVector3, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemType_0: %SystemType, null
+    __const_SystemType_1: %SystemType, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __0__intnlparam: %VRCUdonUdonBehaviour, null
+    __1__intnlparam: %UnityEngineComponent, null
+    __gintnl_SystemUInt32_2: %SystemUInt32, null
+    __gintnl_SystemUInt32_3: %SystemUInt32, null
+    __const_SystemString_0: %SystemString, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __const_SystemString_1: %SystemString, null
+    __gintnl_SystemUInt32_4: %SystemUInt32, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __const_SystemString_4: %SystemString, null
+    __const_SystemString_5: %SystemString, null
+    __const_SystemString_6: %SystemString, null
+    __const_SystemString_7: %SystemString, null
+    __const_SystemString_8: %SystemString, null
+    __const_UnityEngineVector3_1: %UnityEngineVector3, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __const_SystemString_9: %SystemString, null
+    __const_SystemString_10: %SystemString, null
+    __const_SystemString_11: %SystemString, null
+    __const_SystemString_12: %SystemString, null
+    __const_SystemString_13: %SystemString, null
+    __const_SystemString_14: %SystemString, null
+    __const_SystemString_15: %SystemString, null
+    __const_SystemString_16: %SystemString, null
+    __const_SystemString_17: %SystemString, null
+    __const_SystemString_18: %SystemString, null
+    __const_SystemSingle_2: %SystemSingle, null
+    __const_SystemString_19: %SystemString, null
+    __const_SystemString_20: %SystemString, null
+    __const_SystemString_21: %SystemString, null
+    __const_SystemString_22: %SystemString, null
+    __const_SystemString_23: %SystemString, null
+    __const_SystemString_24: %SystemString, null
+    __const_SystemString_25: %SystemString, null
+    __const_SystemString_26: %SystemString, null
+    __const_SystemString_27: %SystemString, null
+    __const_SystemString_28: %SystemString, null
+    __const_SystemString_29: %SystemString, null
+    __const_SystemString_30: %SystemString, null
+    __const_SystemString_31: %SystemString, null
+    __const_SystemString_32: %SystemString, null
+    __const_SystemString_33: %SystemString, null
+    __const_SystemString_34: %SystemString, null
+    __const_SystemString_35: %SystemString, null
+    __const_SystemString_36: %SystemString, null
+    __const_SystemString_37: %SystemString, null
+    __const_SystemString_38: %SystemString, null
+    __const_SystemString_39: %SystemString, null
+    __const_SystemString_40: %SystemString, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_SystemString_41: %SystemString, null
+    __const_SystemString_42: %SystemString, null
+    __const_VRCUdonCommonEnumsEventTiming_0: %VRCUdonCommonEnumsEventTiming, null
+    __const_SystemString_43: %SystemString, null
+    __const_SystemString_44: %SystemString, null
+    __const_SystemString_45: %SystemString, null
+    __const_SystemString_46: %SystemString, null
+    __const_SystemString_47: %SystemString, null
+    __const_SystemString_48: %SystemString, null
+    __const_SystemString_49: %SystemString, null
+    __this_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, this
+    __const_SystemString_50: %SystemString, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemString_51: %SystemString, null
+    __gintnl_SystemUInt32_5: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, this
+    __const_SystemType_2: %SystemType, null
+    __const_SystemInt64_0: %SystemInt64, null
+    __const_SystemString_52: %SystemString, null
+    __intnl_UnityEngineTransform_0: %UnityEngineTransform, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineTransform_1: %UnityEngineTransform, null
+    __intnl_UnityEngineTransform_2: %UnityEngineTransform, null
+    __intnl_UnityEngineTransform_3: %UnityEngineTransform, null
+    __intnl_UnityEngineGameObject_0: %UnityEngineGameObject, null
+    __intnl_UnityEngineGameObject_1: %UnityEngineGameObject, null
+    __intnl_SystemObject_0: %SystemObject, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemObject_1: %SystemObject, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemObject_2: %SystemObject, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemObject_3: %SystemObject, null
+    __intnl_SystemInt32_2: %SystemInt32, null
+    __intnl_UnityEngineTransform_4: %UnityEngineTransform, null
+    __intnl_SystemObject_4: %SystemObject, null
+    __intnl_SystemInt32_3: %SystemInt32, null
+    __intnl_UnityEngineGameObject_2: %UnityEngineGameObject, null
+    __intnl_SystemInt32_4: %SystemInt32, null
+    __intnl_SystemObject_5: %SystemObject, null
+    __intnl_SystemObject_6: %SystemObject, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __lcl_AlreadyResetFlug_SystemBoolean_0: %SystemBoolean, null
+    __lcl_i_SystemInt32_0: %SystemInt32, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_UnityEngineAudioClip_0: %UnityEngineAudioClip, null
+    __intnl_SystemObject_7: %SystemObject, null
+    __intnl_SystemString_1: %SystemString, null
+    __intnl_SystemInt32_5: %SystemInt32, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemObject_8: %SystemObject, null
+    __intnl_SystemInt32_6: %SystemInt32, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_TMProTextMeshProUGUI_0: %TMProTextMeshProUGUI, null
+    __intnl_SystemInt32_7: %SystemInt32, null
+    __intnl_SystemObject_9: %SystemObject, null
+    __intnl_UnityEngineUIText_0: %UnityEngineUIText, null
+    __intnl_UnityEngineGameObject_3: %UnityEngineGameObject, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_SystemObject_10: %SystemObject, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemObject_11: %SystemObject, null
+    __intnl_SystemInt32_8: %SystemInt32, null
+    __intnl_UnityEngineGameObject_4: %UnityEngineGameObject, null
+    __intnl_SystemInt32_9: %SystemInt32, null
+    __intnl_SystemObject_12: %SystemObject, null
+    __intnl_SystemObject_13: %SystemObject, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemObject_14: %SystemObject, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __intnl_SystemObject_15: %SystemObject, null
+    __intnl_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_3: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_SystemObject_16: %SystemObject, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemInt32_10: %SystemInt32, null
+    __intnl_SystemBoolean_8: %SystemBoolean, null
+    __lcl_i_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemInt32_11: %SystemInt32, null
+    __intnl_SystemBoolean_9: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_4: %VRCUdonUdonBehaviour, null
+    __lcl_udonBehaviours_UnityEngineComponentArray_0: %UnityEngineComponentArray, null
+    __intnl_UnityEngineComponentArray_0: %UnityEngineComponentArray, null
+    __lcl_targetID_SystemInt64_0: %SystemInt64, null
+    __intnl_SystemInt32_12: %SystemInt32, null
+    __intnl_SystemInt32_13: %SystemInt32, null
+    __intnl_SystemBoolean_10: %SystemBoolean, null
+    __lcl_behaviour_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __lcl_idValue_SystemObject_0: %SystemObject, null
+    __intnl_SystemBoolean_11: %SystemBoolean, null
+    __intnl_SystemInt64_0: %SystemInt64, null
+    __intnl_UnityEngineComponent_0: %UnityEngineComponent, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.Start()
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, Reserve
+        COPY
+        PUSH, Talks
+        PUSH, TalkNumber
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, Balloon
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __const_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        PUSH, UseTextMeshPro
+        JUMP_IF_FALSE, 0x000000dc
+        PUSH, TalkTextMeshPro
+        PUSH, __intnl_UnityEngineGameObject_0
+        EXTERN, "UnityEngineGameObject.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_0
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, NiniTalkText
+        PUSH, __intnl_UnityEngineGameObject_1
+        EXTERN, "UnityEngineGameObject.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x0000013C
+        PUSH, TalkTextMeshPro
+        PUSH, __intnl_UnityEngineGameObject_0
+        EXTERN, "UnityEngineGameObject.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_0
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, NiniTalkText
+        PUSH, __intnl_UnityEngineGameObject_1
+        EXTERN, "UnityEngineGameObject.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_1
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000194
+        PUSH, __gintnl_SystemUInt32_0
+# Calling UdonTalkManager.RandomAlreadyReset()
+        JUMP, 0x0000165C
+        PUSH, NiniTalkText
+        PUSH, __intnl_UnityEngineTransform_1
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_1
+        PUSH, __const_SystemType_0
+        PUSH, TalkText
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, TalkTextMeshPro
+        PUSH, __intnl_UnityEngineTransform_2
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_2
+        PUSH, __const_SystemType_1
+        PUSH, TalkTextPro
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, __gintnl_SystemUInt32_1
+        PUSH, _nukoTween
+        PUSH, __intnl_UnityEngineTransform_3
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_3
+        PUSH, __1__intnlparam
+        COPY
+# Calling UdonSharp.Lib.Internal.GetComponentShim.GetComponent<NukoTween.NukoTweenEngine>(UnityEngine.Component)
+        JUMP, 0x00001838
+        PUSH, __0__intnlparam
+        PUSH, tween
+        COPY
+        PUSH, __gintnl_SystemUInt32_2
+# Calling UdonTalkManager.NextTalk()
+        JUMP, 0x00001608
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export ForceTalk
+    ForceTalk:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.ForceTalk()
+# 
+        PUSH, __const_SystemBoolean_1
+        PUSH, Reserve
+        COPY
+        PUSH, __gintnl_SystemUInt32_3
+# Calling UdonTalkManager.TalkStart()
+        JUMP, 0x000002C0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export TalkStart
+    TalkStart:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.TalkStart()
+# 
+        PUSH, TalkText
+        PUSH, __const_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, TalkTextPro
+        PUSH, __const_SystemString_0
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, Reserve
+        JUMP_IF_FALSE, 0x00000308
+        JUMP, 0x0000064C
+        PUSH, Order
+        JUMP_IF_FALSE, 0x0000039c
+        PUSH, TalkNumber
+        PUSH, __const_SystemInt32_1
+        PUSH, TalkNumber
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, TalkNumber
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000394
+        PUSH, __const_SystemInt32_0
+        PUSH, TalkNumber
+        COPY
+        JUMP, 0x0000062C
+        PUSH, __const_SystemBoolean_1
+        PUSH, __lcl_AlreadyResetFlug_SystemBoolean_0
+        COPY
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_0
+        COPY
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x000004bc
+        PUSH, Talks
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_1
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, __intnl_SystemBoolean_2
+        COPY
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000478
+        JUMP, 0x00000494
+        PUSH, __const_SystemBoolean_0
+        PUSH, __lcl_AlreadyResetFlug_SystemBoolean_0
+        COPY
+        JUMP, 0x000004BC
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000003C4
+        PUSH, __lcl_AlreadyResetFlug_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000004dc
+        PUSH, __gintnl_SystemUInt32_4
+# Calling UdonTalkManager.RandomAlreadyReset()
+        JUMP, 0x0000165C
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "UnityEngineRandom.__Range__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __const_SystemBoolean_1
+        JUMP_IF_FALSE, 0x0000062c
+        PUSH, Talks
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_1
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, __intnl_SystemBoolean_1
+        COPY
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000590
+        JUMP, 0x000005EC
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, TalkNumber
+        COPY
+        PUSH, Talks
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_VRCUdonUdonBehaviour_1
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_VRCUdonUdonBehaviour_1
+        PUSH, __const_SystemString_1
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        JUMP, 0x0000062C
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "UnityEngineRandom.__Range__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000514
+        PUSH, Talks
+        PUSH, TalkNumber
+        PUSH, TempTalk
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_2
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, __intnl_SystemBoolean_1
+        COPY
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000710
+        PUSH, TempTalk
+        PUSH, __const_SystemString_3
+        PUSH, __intnl_SystemObject_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_1
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, TempTalk
+        PUSH, __const_SystemString_4
+        PUSH, __intnl_SystemObject_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_2
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_5
+        PUSH, __intnl_SystemObject_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_1
+        PUSH, __intnl_SystemBoolean_2
+        COPY
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x000007a0
+        PUSH, TempTalk
+        PUSH, __const_SystemString_6
+        PUSH, __intnl_SystemObject_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_2
+        PUSH, __intnl_UnityEngineAudioClip_0
+        COPY
+        PUSH, _audio
+        PUSH, __intnl_UnityEngineAudioClip_0
+        EXTERN, "UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_7
+        PUSH, __intnl_SystemObject_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_2
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, _animator
+        PUSH, __const_SystemString_7
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "UnityEngineAnimator.__SetInteger__SystemString_SystemInt32__SystemVoid"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_8
+        PUSH, __intnl_SystemObject_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_3
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, _animator
+        PUSH, __const_SystemString_8
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "UnityEngineAnimator.__SetInteger__SystemString_SystemInt32__SystemVoid"
+        PUSH, Balloon
+        PUSH, __intnl_UnityEngineTransform_4
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_4
+        PUSH, __const_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_9
+        PUSH, __intnl_SystemObject_4
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_4
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+# Cow dirty
+        PUSH, Balloon
+        PUSH, __intnl_UnityEngineGameObject_2
+        COPY
+        PUSH, tween
+        PUSH, __const_SystemString_10
+        PUSH, Balloon
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_11
+        PUSH, __const_UnityEngineVector3_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_12
+        PUSH, __const_SystemSingle_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_13
+        PUSH, __const_SystemSingle_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_14
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_15
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_16
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_17
+        PUSH, __intnl_SystemObject_5
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_5
+        PUSH, __intnl_SystemInt32_4
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, UseTextMeshPro
+        JUMP_IF_FALSE, 0x00000bfc
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_6
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, __intnl_SystemString_1
+        COPY
+        PUSH, __intnl_SystemString_1
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, tween
+        PUSH, __const_SystemString_19
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+# Cow dirty
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_2
+        COPY
+# Cow dirty
+        PUSH, TalkTextPro
+        PUSH, __intnl_TMProTextMeshProUGUI_0
+        COPY
+        PUSH, tween
+        PUSH, __const_SystemString_20
+        PUSH, TalkTextPro
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_21
+        PUSH, __intnl_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_22
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_23
+        PUSH, __const_SystemSingle_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_24
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_25
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_26
+        PUSH, __intnl_SystemObject_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_9
+        PUSH, __intnl_SystemInt32_7
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        JUMP, 0x00000E04
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_6
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, __intnl_SystemString_1
+        COPY
+        PUSH, __intnl_SystemString_1
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, tween
+        PUSH, __const_SystemString_19
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+# Cow dirty
+        PUSH, TalkText
+        PUSH, __intnl_UnityEngineUIText_0
+        COPY
+# Cow dirty
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_2
+        COPY
+        PUSH, tween
+        PUSH, __const_SystemString_27
+        PUSH, TalkText
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_28
+        PUSH, __intnl_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_29
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_30
+        PUSH, __const_SystemSingle_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_31
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_32
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_33
+        PUSH, __intnl_SystemObject_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_9
+        PUSH, __intnl_SystemInt32_7
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_34
+        PUSH, __intnl_SystemObject_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_6
+        PUSH, __intnl_SystemBoolean_3
+        COPY
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x00000fec
+        PUSH, TempTalk
+        PUSH, __const_SystemString_35
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, __intnl_UnityEngineGameObject_3
+        COPY
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, __intnl_SystemString_0
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __const_SystemSingle_2
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+# Cow dirty
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_3
+        COPY
+        PUSH, tween
+        PUSH, __const_SystemString_36
+        PUSH, __intnl_UnityEngineGameObject_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_37
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_38
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_39
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_40
+        PUSH, __intnl_SystemObject_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_9
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        JUMP, 0x000010F0
+        PUSH, TempTalk
+        PUSH, __const_SystemString_18
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, __intnl_SystemString_0
+        COPY
+        PUSH, __intnl_SystemString_0
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, TalkWeight
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_42
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_41
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export TalkEnd
+    TalkEnd:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.TalkEnd()
+# 
+        PUSH, TempTalk
+        PUSH, __const_SystemString_41
+        PUSH, __intnl_SystemObject_10
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_10
+        PUSH, __intnl_SystemBoolean_4
+        COPY
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x00001190
+        PUSH, _animator
+        PUSH, __const_SystemString_7
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineAnimator.__SetInteger__SystemString_SystemInt32__SystemVoid"
+        PUSH, _animator
+        PUSH, __const_SystemString_8
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineAnimator.__SetInteger__SystemString_SystemInt32__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_43
+        PUSH, __intnl_SystemObject_11
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_11
+        PUSH, __intnl_SystemInt32_8
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+# Cow dirty
+        PUSH, Balloon
+        PUSH, __intnl_UnityEngineGameObject_4
+        COPY
+        PUSH, tween
+        PUSH, __const_SystemString_10
+        PUSH, Balloon
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_11
+        PUSH, __const_UnityEngineVector3_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_12
+        PUSH, __const_SystemSingle_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_13
+        PUSH, __const_SystemSingle_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_14
+        PUSH, __intnl_SystemInt32_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_15
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_16
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, tween
+        PUSH, __const_SystemString_17
+        PUSH, __intnl_SystemObject_12
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_12
+        PUSH, __intnl_SystemInt32_9
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_44
+        PUSH, __intnl_SystemObject_13
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_13
+        PUSH, __intnl_SystemBoolean_5
+        COPY
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x00001524
+        PUSH, TempTalk
+        PUSH, __const_SystemString_45
+        PUSH, __intnl_SystemObject_14
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_14
+        PUSH, __intnl_SystemBoolean_6
+        COPY
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00001430
+        PUSH, TempTalk
+        PUSH, __const_SystemString_46
+        PUSH, __intnl_SystemObject_15
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_15
+        PUSH, __intnl_VRCUdonUdonBehaviour_2
+        COPY
+        PUSH, Other
+        PUSH, __const_SystemString_47
+        PUSH, __intnl_VRCUdonUdonBehaviour_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, Other
+        PUSH, __const_SystemString_44
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, Other
+# Cow dirty
+        PUSH, Other
+        PUSH, __intnl_VRCUdonUdonBehaviour_3
+        COPY
+        PUSH, __const_SystemString_48
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        JUMP, 0x0000151C
+        PUSH, TempTalk
+        PUSH, __const_SystemString_49
+        PUSH, __intnl_SystemObject_15
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_15
+        PUSH, __intnl_SystemBoolean_7
+        COPY
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x000014d4
+        PUSH, TempTalk
+        PUSH, __const_SystemString_50
+        PUSH, __intnl_SystemObject_16
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_16
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __this_VRCUdonUdonBehaviour_1
+        PUSH, __const_SystemString_48
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, TempTalk
+        PUSH, __const_SystemString_46
+        PUSH, __intnl_SystemObject_16
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_16
+        PUSH, TempTalk
+        COPY
+        PUSH, __const_SystemBoolean_1
+        PUSH, Reserve
+        COPY
+        JUMP, 0x000015DC
+        PUSH, __const_SystemBoolean_0
+        PUSH, Reserve
+        COPY
+        PUSH, Other
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x000015dc
+        PUSH, Other
+        PUSH, __const_SystemString_44
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, Other
+# Cow dirty
+        PUSH, Other
+        PUSH, __intnl_VRCUdonUdonBehaviour_2
+        COPY
+        PUSH, __const_SystemString_51
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __gintnl_SystemUInt32_5
+# Calling UdonTalkManager.NextTalk()
+        JUMP, 0x00001608
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export NextTalk
+    NextTalk:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.NextTalk()
+# 
+        PUSH, AutoTalk
+        JUMP_IF_FALSE, 0x00001640
+        PUSH, __this_VRCUdonUdonBehaviour_2
+        PUSH, __const_SystemString_48
+        PUSH, TalkInterval
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.RandomAlreadyReset()
+# 
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_10
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_10
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x00001768
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_1
+        COPY
+        PUSH, Talks
+        PUSH, __intnl_SystemInt32_11
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __intnl_SystemInt32_11
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x00001768
+        PUSH, Talks
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __intnl_VRCUdonUdonBehaviour_4
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __intnl_VRCUdonUdonBehaviour_4
+        PUSH, __const_SystemString_1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, __lcl_i_SystemInt32_1
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_1
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000016B8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export AutoTalkChange
+    AutoTalkChange:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.AutoTalkChange()
+# 
+        PUSH, AutoTalk
+        JUMP_IF_FALSE, 0x000017b0
+        PUSH, __const_SystemBoolean_0
+        PUSH, AutoTalk
+        COPY
+        JUMP, 0x000017C4
+        PUSH, __const_SystemBoolean_1
+        PUSH, AutoTalk
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export AutoTalkON
+    AutoTalkON:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.AutoTalkON()
+# 
+        PUSH, __const_SystemBoolean_1
+        PUSH, AutoTalk
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export AutoTalkOFF
+    AutoTalkOFF:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonTalkManager.AutoTalkOFF()
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, AutoTalk
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+# 
+# UdonSharp.Lib.Internal.GetComponentShim.GetComponent<NukoTween.NukoTweenEngine>(UnityEngine.Component)
+# 
+        PUSH, __1__intnlparam
+        PUSH, __const_SystemType_2
+        PUSH, __intnl_UnityEngineComponentArray_0
+        EXTERN, "UnityEngineComponent.__GetComponents__SystemType__UnityEngineComponentArray"
+        PUSH, __intnl_UnityEngineComponentArray_0
+        PUSH, __lcl_udonBehaviours_UnityEngineComponentArray_0
+        COPY
+        PUSH, __const_SystemInt64_0
+        PUSH, __lcl_targetID_SystemInt64_0
+        COPY
+        PUSH, __lcl_udonBehaviours_UnityEngineComponentArray_0
+        PUSH, __intnl_SystemInt32_12
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_13
+        COPY
+        PUSH, __intnl_SystemInt32_13
+        PUSH, __intnl_SystemInt32_12
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        JUMP_IF_FALSE, 0x000019f8
+        PUSH, __lcl_udonBehaviours_UnityEngineComponentArray_0
+        PUSH, __intnl_SystemInt32_13
+        PUSH, __lcl_behaviour_VRCUdonUdonBehaviour_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __lcl_behaviour_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_52
+        PUSH, __lcl_idValue_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __lcl_idValue_SystemObject_0
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_SystemBoolean_11
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x00001984
+        PUSH, __lcl_idValue_SystemObject_0
+        PUSH, __intnl_SystemInt64_0
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __intnl_SystemInt64_0
+        PUSH, __lcl_targetID_SystemInt64_0
+        PUSH, __intnl_SystemBoolean_11
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_11
+        JUMP_IF_FALSE, 0x000019d0
+        PUSH, __lcl_behaviour_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_UnityEngineComponent_0
+        COPY
+        PUSH, __intnl_UnityEngineComponent_0
+        PUSH, __0__intnlparam
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __intnl_SystemInt32_13
+        PUSH, __const_SystemInt32_1
+        PUSH, __intnl_SystemInt32_13
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000018AC
+        PUSH, __const_SystemObject_0
+        PUSH, __0__intnlparam
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: SimpleInteractAcrive
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 1aa824985cf5841419deb810f7a00a05,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: e259d2bea61c77b449c389cfd2ce230d,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export ActiveTarget\r\n    \r\n    __instance_0:
     %UnityEngineGameObject, this\r\n    __value_0: %SystemBoolean, null\r\n    __instance_1:

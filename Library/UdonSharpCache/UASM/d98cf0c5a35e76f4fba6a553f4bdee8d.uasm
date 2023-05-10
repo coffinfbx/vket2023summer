@@ -1,0 +1,52 @@
+.data_start
+    .export _talkManager
+    .export ReserveTalk
+    .export IsSelectionButton
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    _talkManager: %VRCUdonUdonBehaviour, null
+    ReserveTalk: %VRCUdonUdonBehaviour, null
+    IsSelectionButton: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemString_0: %SystemString, null
+    __const_SystemString_1: %SystemString, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_UnityEngineTransform_0: %UnityEngineTransform, null
+    __intnl_UnityEngineGameObject_0: %UnityEngineGameObject, null
+.data_end
+.code_start
+    .export ForceTalk
+    ForceTalk:
+        PUSH, __const_SystemUInt32_0
+# 
+# ReserveTalkSender.ForceTalk()
+# 
+        PUSH, _talkManager
+        PUSH, __const_SystemString_0
+        PUSH, ReserveTalk
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, _talkManager
+# Cow dirty
+        PUSH, _talkManager
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, IsSelectionButton
+        JUMP_IF_FALSE, 0x000000ac
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineGameObject_0
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_0
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

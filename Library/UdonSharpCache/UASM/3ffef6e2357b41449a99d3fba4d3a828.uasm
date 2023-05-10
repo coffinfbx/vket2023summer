@@ -1,0 +1,48 @@
+.data_start
+    .export Self
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    Self: %UnityEngineTransform, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_UnityEngineHumanBodyBones_0: %UnityEngineHumanBodyBones, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __lcl_lookPosition_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_1: %UnityEngineVector3, null
+.data_end
+.code_start
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# YBillBoard.Update()
+# 
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __lcl_lookPosition_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, Self
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineVector3.__get_y__SystemSingle"
+        PUSH, __lcl_lookPosition_UnityEngineVector3_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineVector3.__set_y__SystemSingle"
+# Cow dirty
+        PUSH, __lcl_lookPosition_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineVector3_1
+        COPY
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __lcl_lookPosition_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__LookAt__UnityEngineVector3__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end
